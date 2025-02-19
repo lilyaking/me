@@ -17,9 +17,24 @@
             background: #333;
             color: #fff;
             padding: 20px;
+            text-align: center; /* Center the header */
         }
         .main-info h1 {
             margin: 0;
+        }
+        .profile-image-large {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .profile-image-thumbnail {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
         .hobbies, .lewis, .course, .job, .fun-fact, .contact-info {
             background: #e7e7e7;
@@ -27,7 +42,7 @@
             margin-bottom: 10px;
         }
         footer p {
-            font-style: normal; /* Ensures the text is not italicized */
+            font-style: normal;
         }
         .contact-info a {
             color: #0077cc;
@@ -42,6 +57,8 @@
     <div class="container">
         <header class="main-info">
             <h1>Lily King's Introductions Website</h1>
+            <!-- Centered large image -->
+            <img src="me-800-by-800.jpg" alt="Lily King" class="profile-image-large">
         </header>
 
         <section class="lewis">
@@ -68,6 +85,12 @@
         <section class="fun-fact">
             <h2>Fun Fact</h2>
             <p>I play volleyball at Lewis</p>
+        </section>
+
+        <!-- Displaying the smaller thumbnail image -->
+        <section class="thumbnail-image">
+            <h2>My Thumbnail</h2>
+            <img src="me-300-by-300.jpg" alt="Lily King Thumbnail" class="profile-image-thumbnail">
         </section>
 
         <!-- Contact Info Section -->
