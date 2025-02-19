@@ -17,32 +17,17 @@
             background: #333;
             color: #fff;
             padding: 20px;
-            text-align: center; /* Center the header */
         }
         .main-info h1 {
             margin: 0;
         }
-        .profile-image-large {
-            max-width: 800px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-        .profile-image-thumbnail {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
-        .hobbies, .lewis, .course, .job, .fun-fact, .contact-info {
+        .hobbies, .lewis, .course, .job, .fun-fact, .contact-info, .introduction, .learn, .favorite-hobby {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
         }
         footer p {
-            font-style: normal;
+            font-style: normal; /* Ensures the text is not italicized */
         }
         .contact-info a {
             color: #0077cc;
@@ -51,15 +36,21 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        .favorite-hobby ul {
+            list-style-type: square;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="main-info">
             <h1>Lily King's Introductions Website</h1>
-            <!-- Centered large image -->
-            <img src="me-800-by-800.jpg" alt="Lily King" class="profile-image-large">
         </header>
+
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>Hi, I'm Lily! I'm a passionate student at Lewis University, studying English in Secondary Education. My family is incredibly supportive and encourages me to follow my dreams, and I'm excited to one day become an educator. I have a strong love for both literature and working with children, which is why I chose this major and concentration.</p>
+        </section>
 
         <section class="lewis">
             <h2>Year at Lewis: 2</h2>
@@ -87,10 +78,25 @@
             <p>I play volleyball at Lewis</p>
         </section>
 
-        <!-- Displaying the smaller thumbnail image -->
-        <section class="thumbnail-image">
-            <h2>My Thumbnail</h2>
-            <img src="me-300-by-300.jpg" alt="Lily King Thumbnail" class="profile-image-thumbnail">
+        <!-- What I Hope to Learn in This Course -->
+        <section class="learn">
+            <h2>What I Hope to Learn in this Course</h2>
+            <ul>
+                <li>Effective communication techniques</li>
+                <li>Web development skills</li>
+                <li>Understanding how to create interactive web pages</li>
+                <li>Improved design and layout skills for websites</li>
+            </ul>
+        </section>
+
+        <!-- My Favorite Hobby / Activity -->
+        <section class="favorite-hobby">
+            <h2>My Favorite Hobby / Activity</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Playing volleyball</li>
+            </ul>
+            <p>For more about volleyball, you can check out <a href="https://en.wikipedia.org/wiki/Volleyball" target="_blank">this page on Volleyball</a>.</p>
         </section>
 
         <!-- Contact Info Section -->
